@@ -1,0 +1,13 @@
+= Relaton IEEE Models
+
+This is where we keep the Relaton IEEE model definitions.
+
+The IEEE Relaton model is an instance of the
+https://github.com/relaton/relaton-models[Relaton model].
+
+Details of the general model can be found on its page.
+
+== IEEE Bibliographic Item Model
+
+image::images/IeeeBibliographicItem.png[]
+
