@@ -18,10 +18,11 @@ class IeeeBibliographicItem {
   +relation: IeeeDocumentRelation[0..*]
   +documentStatus: IeeeDocumentStatus
   +commentPeriod: IeeeCommentPeriod[0..1]
+  +committee: IeeeCommittee[0..*]
 }
 
 class IeeeProjectTeam{
-  +committee: IeeeCommittee
+  +committee: IeeeProjectCommittee
   +workgroup: IeeeWorkingGroup
 }
 
@@ -45,7 +46,12 @@ class IeeeCommentPeriod {
   +to: Date[0..1]
 }
 
-enum IeeeCommittee <<enumeration>>{
+class IeeeCommittee {
+  +type: String
+  +name: String
+}
+
+enum IeeeProjectCommittee <<enumeration>>{
   hssc
   ircc
 }
@@ -111,7 +117,7 @@ note bottom of IeeeDocumentType: * standard (framework document, e.g. S-57, S-10
 
 note bottom of IeeeDocumentStatusType: * Proposed Phase Draft\n* Development Phase Draft ("Draft Publications for discussion")\n* Testing Phase Draft\n* Implementation Stage Draft ("Draft Publications awaiting approval by Member States")\n* In-force publications:\n** In-force but prior to effective date ("Draft Publications in the final stage of editing following adoption by Member States")\n** In-force and effective\n* Retired publications
 
-note bottom of IeeeCommittee: * Hydrographic Services and Standards Committee (HSSC)\n* Inter-Regional Coordination Committee (IRCC)
+note bottom of IeeeProjectCommittee: * Hydrographic Services and Standards Committee (HSSC)\n* Inter-Regional Coordination Committee (IRCC)
 
 note bottom of IeeeDocumentRelation: Also indicates current document's relationship\nwith parent documents (e.g. this document is\n annex B of section 3\n of an appendix A)
 
@@ -123,12 +129,13 @@ IeeeBibliographicItem <-- IeeeDocumentType
 IeeeBibliographicItem <-- IeeeDocumentStatus
 IeeeBibliographicItem <-- IeeePubSeriesType
 
-IeeeProjectTeam <-- IeeeCommittee
+IeeeProjectTeam <-- IeeeProjectCommittee
 IeeeProjectTeam <-- IeeeWorkingGroup
 
 IeeeBibliographicItem <-- IeeeCommentPeriod
 IeeeBibliographicItem <-- IeeeDocumentRelation
 IeeeBibliographicItem <-- IeeeBibliographicDate
+IeeeBibliographicItem <-- IeeeCommittee
 
 BibliographicDate <|-- IeeeBibliographicDate
 BibliographicDateType <|-- IeeeBibliographicDateType
