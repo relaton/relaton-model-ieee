@@ -49,6 +49,7 @@ class IeeeCommentPeriod {
 class IeeeCommittee {
   +type: String
   +name: String
+  +chair: String[0..1]
 }
 
 enum IeeeProjectCommittee <<enumeration>>{
