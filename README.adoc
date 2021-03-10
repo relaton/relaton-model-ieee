@@ -1,3 +1,5 @@
+image:https://github.com/relaton/relaton-model-ieee/workflows/make/badge.svg["Build Status", link="https://github.com/relaton/relaton-model-ieee/actions/workflows/make.yml"]
+
 = Relaton IEEE Models
 
 This is where we keep the Relaton IEEE model definitions.
