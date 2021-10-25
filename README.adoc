@@ -13,3 +13,7 @@ image:https://github.com/relaton/relaton-model-ieee/workflows/make/badge.svg["Bu
 == IEEE Metadata UML Models
 
 image::images/IeeeMetadata.png[]
+
+== ISBN Number Model
+
+image::images/IsbnNumber.png[]
