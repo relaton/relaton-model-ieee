@@ -1,4 +1,4 @@
-class IeeeStandardStatus {
+enum IeeeStandardStatus {
   definition {
     Standard status.
   }
