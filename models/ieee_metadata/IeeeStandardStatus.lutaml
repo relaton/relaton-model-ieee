@@ -5,19 +5,19 @@ class IeeeStandardStatus {
 
   active {
     definition {
-      Active
+      This document is active.
     }
   }
 
   inactive {
     definition {
-      Inactive
+      This document is now inactive.
     }
   }
 
   superseded {
     definition {
-      Superseded
+      This document has been superseded.
     }
   }
 
