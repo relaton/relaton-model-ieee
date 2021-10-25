@@ -1,6 +1,7 @@
 diagram IeeeMetadata {
 
   include ../models/relaton/BibliographicItem.lutaml
+  include ../models/relaton/IsbnNumber.lutaml
 
   include ../models/ieee_metadata/IeeeBibliographicDate.lutaml
   include ../models/ieee_metadata/IeeeBibliographicDateType.lutaml
@@ -158,6 +159,12 @@ diagram IeeeMetadata {
 
   association {
     owner IeeeHoldStatus
+    member IeeeBibliographicItem
+    member_type direct
+  }
+
+  association {
+    owner IsbnNumber
     member IeeeBibliographicItem
     member_type direct
   }
