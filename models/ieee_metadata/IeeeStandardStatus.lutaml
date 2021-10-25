@@ -1,0 +1,24 @@
+class IeeeStandardStatus {
+  definition {
+    Standard status.
+  }
+
+  active {
+    definition {
+      Active
+    }
+  }
+
+  inactive {
+    definition {
+      Inactive
+    }
+  }
+
+  superseded {
+    definition {
+      Superseded
+    }
+  }
+
+}

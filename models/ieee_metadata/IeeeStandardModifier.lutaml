@@ -1,0 +1,8 @@
+enum IeeeStandardModifier {
+  Approved
+  Draft
+  Redline
+  Reserved
+  Superseded
+  Withdrawn
+}

@@ -1,0 +1,9 @@
+enum IeeeDocumentRelationType {
+  definition {
+    Document relation type.
+  }
+
+  I
+  V
+  S
+}

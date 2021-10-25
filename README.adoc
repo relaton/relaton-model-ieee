@@ -1,15 +1,15 @@
+= Relaton IeeeBibliographic Model
+
+This bibliographic model is developed to consolidate and standardize
+the data model used for bibliographic and citation purposes.
+
+This model is meant to be fully compatible with ISO 690 and
+ISO TC 46's (and SC 4, SC 9) work on bibliography.
+
+
 image:https://github.com/relaton/relaton-model-ieee/workflows/make/badge.svg["Build Status", link="https://github.com/relaton/relaton-model-ieee/actions/workflows/make.yml"]
 
-= Relaton IEEE Models
 
-This is where we keep the Relaton IEEE model definitions.
+== IEEE Metadata UML Models
 
-The IEEE Relaton model is an instance of the
-https://github.com/relaton/relaton-models[Relaton model].
-
-Details of the general model can be found on its page.
-
-== IEEE Bibliographic Item Model
-
-image::images/IeeeBibliographicItem.png[]
-
+image::images/IeeeMetadata.png[]
