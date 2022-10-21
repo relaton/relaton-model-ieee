@@ -1,3 +1,5 @@
+include "biblio.rnc" {
+
 DocumentType = "guide" | "recommended-practice" | "standard" | "whitepaper" | "redline" | "other"
 
 stage = element stage {
