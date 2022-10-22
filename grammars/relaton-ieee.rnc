@@ -1,4 +1,4 @@
-include "biblio.rnc" {
+include "biblio-standoc.rnc" {
 
 DocumentType = "guide" | "recommended-practice" | "standard" | "whitepaper" | "redline" | "other"
 
@@ -35,6 +35,7 @@ balloting-group = element balloting-group {
   attribute type { "individual" | "entity" },
   text
 }
+
 working-group = element working-group { text }
 committee = element committee { text }
 society = element society { text }
