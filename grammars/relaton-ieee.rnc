@@ -12,11 +12,13 @@ editorialgroup = element editorialgroup {
 
 DocumentSubtype = "amendment" | "corrigendum" | "erratum"
 
+}
+
 BibDataExtensionType &=
         ## Document published for a limited period of time.  Can apply to any of the document types
         ## A Trial-Use standard is only described in the text of the introduction, it is not prominently displayed nor is it fielded data.
         ## https://standards.ieee.org/about/policies/opman/sect5/
-        trialuse?, 
+        trialuse?,
         ## Status of standard: Inactive, Active, Superseded
         standard_status?,
         ## Modification status of standard: Draft, Withdrawn, Superseded, Approved, Reserved, Redline
@@ -27,7 +29,7 @@ BibDataExtensionType &=
         holdstatus?,
         ## Program under which a white paper was authored
         program?
-}
+
 
 standard_status = element standard_status { "Inactive" | "Active" | "Superseded" }
 
