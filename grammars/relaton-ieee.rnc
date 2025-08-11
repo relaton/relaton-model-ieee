@@ -41,7 +41,11 @@ holdstatus = element holdstatus { "Hold" | "Publish" }
 
 program = element program { text }
 
-BibliographicDateType |= "feedback-ended"
+BibliographicDateType |=
+  ## Date on which feedback on the document must be received by
+  "feedback-ended" |
+  ## Date that the document was approved by the IEEE SA Standards Body
+  "ieee-sasb-approved" |
 
 
 trialuse = element trial-use { xsd:boolean }
