@@ -6,7 +6,7 @@ stage = element stage {
   "draft" | "approved" | "superseded" | "withdrawn"
 }
 
-DocumentSubtype = "amendment" | "corrigendum" | "erratum"
+DocumentSubtype = "amendment" | "corrigendum" | "erratum" | "icap" | "document" | "industry-connections-report" | "industry-affiliate-network"
 
 }
 
